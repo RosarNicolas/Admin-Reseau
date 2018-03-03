@@ -1,0 +1,6 @@
+Créer un DNS local:
+
+Mise en place d'un DNS à partir d'une image "bind".
+
+Téléchargement de l'image:
+<code>docker pull sameersbn/bind:latest</code>
