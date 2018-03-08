@@ -1,25 +1,25 @@
-Docker file :
+# Docker file :
 
-// utilisation image ubuntu (la plus récente)
+# utilisation image ubuntu (la plus récente)
 FROM ubuntu:latest
-// set le champ auteur de l'image
+# set le champ auteur de l'image
 MAINTAINER Rosar Nicolas
 
 
-// apt-get => fonctionne en tant que root
-// => RUN = exécute n'importe quelle commande shell OU (2 ème forme du run ==> lancer un exécutable)
-// => apt est un gestionnaire de packages
-// => apt-get update = met à jour le package index
-// => apt-get -y = "YES" automatique à toutes les invites dans le prompt à mettre "yes"
-// => apt-get -y upgrade = mise à jour des derniers packages 
-// => noninteractive = mettre en palce un envirronement avec lequel on n'interagit pas.
-// => apache2 = installation package de apache
-// => pfp7.0 = installation package php version 7.0
-// => pfp7.0-mysql = installation package mysql
-// => libapache2-mod-php7.0 = langage de script inclus dans du HTML et exécuté coté serveur
-// => curl = installation package curl
-// => lynz-cur = client web en ligne de commande. Affiche les documents HTML contenant des liens vers le système local
-// (et serveurs HTTP, FTP ...)
+# apt-get => fonctionne en tant que root
+# => RUN = exécute n'importe quelle commande shell OU (2 ème forme du run ==> lancer un exécutable)
+# => apt est un gestionnaire de packages
+# => apt-get update = met à jour le package index
+# => apt-get -y = "YES" automatique à toutes les invites dans le prompt à mettre "yes"
+# => apt-get -y upgrade = mise à jour des derniers packages 
+# => noninteractive = mettre en palce un envirronement avec lequel on n'interagit pas.
+# => apache2 = installation package de apache
+# => pfp7.0 = installation package php version 7.0
+# => pfp7.0-mysql = installation package mysql
+# => libapache2-mod-php7.0 = langage de script inclus dans du HTML et exécuté coté serveur
+# => curl = installation package curl
+# => lynz-cur = client web en ligne de commande. Affiche les documents HTML contenant des liens vers le système local
+# (et serveurs HTTP, FTP ...)
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     apache2 php7.0 php7.0-mysql libapache2-mod-php7.0 curl lynx-cur
