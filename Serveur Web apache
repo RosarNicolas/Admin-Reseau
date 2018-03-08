@@ -2,7 +2,7 @@
 Créer la structure de fichier suivante :
  ./Dockerfile
  ./apache-config.conf
- ./www/index.php
+ ./www/index.php // a créer dans le conteneur
 ]
 
 # Dans le fichier créé s'appelant "Dockerfile" :
