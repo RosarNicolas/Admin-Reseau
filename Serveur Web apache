@@ -4,3 +4,6 @@ Créer la structure de fichier suivante :
  ./www/index.php // a créer dans le conteneur         #C
 
 
+créer l'image avec :
+"Docker build -t [image name]" à l'endroit où se trouve le deocker file
+
