@@ -1,0 +1,14 @@
+Docker file :
+
+// utilisation image ubuntu (la plus récente)
+FROM ubuntu:latest
+// set le champ auteur de l'image
+MAINTAINER Rosar Nicolas
+
+// apt-get => fonctionne en tant que root
+// => RUN = exécute n'importe quelle commande shell OU (2 ème forme du run ==> lancer un exécutable)
+// => apt est un gestionnaire de packages
+// => apt-get update = met à jour le package index
+// => apt-get -y = "YES" automatique à toutes les invites dans le prompt à mettre "yes"
+// => apt-get -y upgrade = mise à jour des derniers packages 
+// => noninteractive = mettre en palce un envirronement avec lequel on n'interagit pas.
