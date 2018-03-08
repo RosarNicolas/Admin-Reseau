@@ -1,11 +1,11 @@
 [
 Créer la structure de fichier suivante :
- ./Dockerfile
- ./apache-config.conf
- ./www/index.php // a créer dans le conteneur
+ ./Dockerfile        #A
+ ./apache-config.conf         #B
+ ./www/index.php // a créer dans le conteneur         #C
 ]
 
-# Dans le fichier créé s'appelant "Dockerfile" :
+#A Dans le fichier créé s'appelant "Dockerfile" :
 
 # utilisation image ubuntu (la plus récente)
 FROM ubuntu:latest
