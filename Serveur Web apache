@@ -1,4 +1,11 @@
-# Docker file :
+[
+Créer la structure de fichier suivante :
+ ./Dockerfile
+ ./apache-config.conf
+ ./www/index.php
+]
+
+# Dans le fichier créé s'appelant "Dockerfile" :
 
 # utilisation image ubuntu (la plus récente)
 FROM ubuntu:latest
