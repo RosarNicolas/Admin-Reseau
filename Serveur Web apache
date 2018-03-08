@@ -10,3 +10,6 @@ créer l'image avec :
 Créer le conteneur avec les ports adaptés:
 "docker run -p 8080:80 -d --name [conteneur name] [image name]"
 // conteneur 80 et hote 8080
+
+Aller mettre une page web SUR le conteneur DANS "WWW/":
+sudo docker container -ti [name container] -ti srvweb /bin/bash
