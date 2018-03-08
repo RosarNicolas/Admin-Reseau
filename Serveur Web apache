@@ -5,5 +5,5 @@ Créer la structure de fichier suivante :
 
 
 créer l'image avec :
-"Docker build -t [image name]" à l'endroit où se trouve le deocker file
+"Docker build -t [image name] . " à l'endroit où se trouve le deocker file !!! ne pas oublier le point !!!
 
