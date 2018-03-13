@@ -10,7 +10,7 @@ Voir où il se retrouve:
 "docker volume inspect mon_volume"
 Le mettre ailleurs:
 "mv /var/lib/docker/volumes/mon_volume /home/nicolas/serveurWeb"
-
+Mettre page HTML du dossier github dans le volume dans la directory "_data"
 
 
 créer l'image avec :
