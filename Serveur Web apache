@@ -14,7 +14,7 @@ Mettre page HTML du dossier github dans le volume dans la directory "_data"
 
 
 créer l'image avec :
-"Docker build -t [image name] . " à l'endroit où se trouve le deocker file !!! ne pas oublier le point !!!
+"docker build -t [image name] . " à l'endroit où se trouve le deocker file !!! ne pas oublier le point !!!
 
 Créer le conteneur avec les ports adaptés:
 "docker run -p 8080:80 -d --name [conteneur name] [image name]"
