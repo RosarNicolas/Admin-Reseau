@@ -26,6 +26,8 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
 # Activer les modes apaches
 RUN a2enmod php7.0
 RUN a2enmod rewrite
+RUN ["apt-get", "update"]
+RUN ["apt-get", "install", "-y", "vim"]
 
 ################ verifier signification des élément suivants
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
