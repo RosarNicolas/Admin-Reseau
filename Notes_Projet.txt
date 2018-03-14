@@ -1,0 +1,12 @@
+----------------------------
+QUESTION ADMIN RESEAU
+----------------------------
+
+Est-ce qu'il y a moyen lors du lancement d'un container de lier un volume à un fichier qui est créé dans le docker file ? Puisque la liaison se fait lors de la commande du lancement du container. Elle s'effectue donc AVANT ou APRES la crétaion du container ?
+
+
+-----------------------
+AMELIORATIONS
+-----------------------
+
+Automatiser d'afficher la page web qu'on désire à partir de la machine hôte
