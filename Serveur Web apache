@@ -20,7 +20,7 @@ Créer le conteneur avec les ports adaptés:
 //"docker run -p 8080:80 -d --name [conteneur name] [image name]"
 // conteneur 80 et hote 8080
 // tenter avec volume :
-"docker run -p 8080:80 -d --name [conteneur name] -v /home/nicolas/serveurWeb/mon_volume [image name]"
+"docker run -p 8080:80 -d --name [conteneur name] -v /home/nicolas/serveurWeb/mon_volume: /var/www/site [image name]"
 
 // endroit du volume (si réussi) non trouvé !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
