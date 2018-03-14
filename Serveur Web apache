@@ -24,10 +24,9 @@ Créer le conteneur avec les ports adaptés:
 
 // endroit du volume (si réussi) non trouvé !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-Pour aller mettre une page web SUR le conteneur DANS "WWW/" , il faut envoyer le fichier
+Pour aller mettre une page web SUR le conteneur DANS "www/site" , il faut créer la directory "Site" dans "www"  . Il faut envoyer le fichier
 dynamiquement en utilisant un volume ==> dossier partager entre le conteneur et le vps :
 
-...
 
 
 
