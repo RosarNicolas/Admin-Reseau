@@ -17,7 +17,7 @@ MAINTAINER Rosar Nicolas
 # => pfp7.0 = installation package php version 7.0
 # => libapache2-mod-php7.0 = langage de script inclus dans du HTML et exécuté coté serveur
 # => curl = installation package curl
-# => lynz-cur = client web en ligne de commande. Affiche les documents HTML contenant des liens vers le système local
+# => lynx-cur = client web en ligne de commande. Affiche les documents HTML contenant des liens vers le système local
 # (et serveurs HTTP, FTP ...)
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
