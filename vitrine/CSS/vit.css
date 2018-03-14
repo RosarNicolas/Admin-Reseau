@@ -2,9 +2,10 @@ html{
 	background-color: black;
 	color: white;
 	text-align: center;
+	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right;
 }
 body{
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right;
+
 	color: #555753;
 	font: 75% georgia, sans-serif;
 }
