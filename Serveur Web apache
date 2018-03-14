@@ -27,7 +27,8 @@ Créer le conteneur avec les ports adaptés:
 Pour aller mettre une page web SUR le conteneur DANS "www/site" , il faut créer la directory "Site" dans "www"  . Il faut envoyer le fichier
 dynamiquement en utilisant un volume ==> dossier partager entre le conteneur et le vps :
 
-
+tester:
+http://54.37.65.113/Site%20vitrine.html
 
 
 
