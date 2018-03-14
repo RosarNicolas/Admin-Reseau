@@ -1,2 +1,5 @@
 # Télécharger une image mysql :
 docker pull mysql/mysql-server:latest
+
+# créer un conteneur
+docker run --name dbsql  -e MYSQL_ROOT_PASSWORD=mdpLOL -d mysql:latest
