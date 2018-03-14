@@ -4,8 +4,9 @@ html{
 	text-align: center;
 }
 body{
-
-	color: red
+	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right;
+	color: #555753;
+	font: 75% georgia, sans-serif;
 }
 h1{
 	text-decoration: underline;
