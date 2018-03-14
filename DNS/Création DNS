@@ -7,7 +7,7 @@ docker pull sameersbn/bind:latest
 
 Chargement de l'image :
 docker run -d --name=bind --dns=54.37.65.113 \
-  --publish=54.37.65.113:53:53/udp --publish=54.37.65.113::10000:10000 \
+  --publish=54.37.65.113:53:53/udp --publish=54.37.65.113:10000:10000 \
   --volume=/srv/docker/bind:/data \
   --env='ROOT_PASSWORD=mdpLOL' \
   sameersbn/bind:latest
