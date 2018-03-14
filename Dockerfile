@@ -28,6 +28,8 @@ RUN a2enmod php7.0
 RUN a2enmod rewrite
 RUN ["apt-get", "update"]
 RUN ["apt-get", "install", "-y", "vim"]
+RUN ["mkdir", "/var/www/site"]
+RUN ["cp", "/home/nicolas/serveurweb/", ""]
 
 ################ verifier signification des élément suivants
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
