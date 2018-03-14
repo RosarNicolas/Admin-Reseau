@@ -1,0 +1,15 @@
+html{
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+body{
+
+	color: red
+}
+h1{
+	text-decoration: underline;
+}
+p{
+	padding: 0 5px;
+}
