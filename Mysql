@@ -1,0 +1,2 @@
+# Télécharger une image mysql :
+docker pull mysql/mysql-server:latest
