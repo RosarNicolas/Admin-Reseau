@@ -75,6 +75,7 @@
 					$req = 'SELECT * FROM users;';
 					$rep = $dbh->query($req, PDO::FETCH_ASSOC);
 					echo '<pre>'.$rep.'</pre>'; ?>
+					$dbh = null;
 			</p>
 		</main>
 		<footer>
