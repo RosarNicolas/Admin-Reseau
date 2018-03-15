@@ -25,6 +25,7 @@ Créer le conteneur avec les ports adaptés:
 
 // conteneur vitrine
 "docker run -p 81:80 -d --name vitrine -v /home/nicolas/Admin-Reseau/mon_volume:/var/www/html web"
+"docker run -p 82:80 -d --name intranet -v /home/nicolas/Admin-Reseau/mon_volume:/var/www/html web"
 
 
 
