@@ -39,7 +39,8 @@
 				bottom: 0;
 				width:100%;
 				color: white;
-				background-color: black;
+				background-color: blue;
+				border-top : 5px solid black;
 			}
 			a {
 				text-decoration: none;
@@ -66,8 +67,13 @@
 				<a href=http://54.37.65.113:83/b2B.html.php alt="Site intranet">Lien vers le B2B</a>
 			</p>
 			<p>
-				<? echo $test1="PHP marche"; ?>
+				<? echo $test1="PHP marche"; ?><br>
 				<? echo $test2="CA NE MARCHE PAS CA N'A PAS DE JAMBES"; ?>
+			</p>
+			<p>
+				<?
+					$dbh = new PDO('mysql:host=54.37.65.115;dbname=docker_project', 'root', 'Lp2407yn');
+				?>
 			</p>
 		</main>
 		<footer>
