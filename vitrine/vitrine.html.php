@@ -70,14 +70,14 @@
 				<? echo $test1="PHP marche"; ?><br>
 				<? echo $test2="CA NE MARCHE PAS CA N'A PAS DE JAMBES"; ?>
 			</p>
-			<!--<p>
+			<p>
 				<?
-				$dbh = new PDO('mysql:host=54.37.65.115;dbname=docker_project', 'root', 'Lp2407yn');
+				$dbh = new PDO('mysql:host=54.37.65.115;dbname=docker_project', 'nicolas', 'lolmdr');
 				$req = 'SELECT * FROM users;';
 				$rep = $dbh->query($req, PDO::FETCH_ASSOC);
 				echo '<pre>'.$rep.'</pre>';
 				?>
-			</p>-->
+			</p>
 		</main>
 		<footer>
       <p>Groupe Numero 3</p>
