@@ -38,6 +38,9 @@ Créer le conteneur avec les ports adaptés:
   // MAIS copie manuelle du dossier github partagé (à mettre à jour avec "git pull origin master")
   // et copier fichiers nécessaires (.html, css ...) dans le volume partagé
 
+// copier dans volume ce qui arrive via git hub
+sudo cp intranet/intranet.html mon_volume/intranet.html
+sudo cp vitrine/vitrine.html mon_volume/vitrine.html
 
 // conteneur vitrine
 "docker run -p 81:80 -d --name vitrine -v /home/nicolas/Admin-Reseau/mon_volume:/var/www/html web"
