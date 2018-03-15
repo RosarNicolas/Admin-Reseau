@@ -1,37 +1,54 @@
+-------------------------------
 Créer la structure de fichier suivante :
- ./Dockerfile        #A
- ./apache-config.conf         #B
- ./www/index.php // a créer dans le conteneur         #C
+ ./Dockerfile                                                
+ ./apache-config.conf                                        
+-------------------------------
 
 
-créer un volume :
-"docker volume create mon_volume"
+-------------------------------
+CREATION DU VOLUME
+-------------------------------
+    "docker volume create mon_volume"
+    
 Voir où il se retrouve:
-"docker volume inspect mon_volume"
+    "docker volume inspect mon_volume"
+    
 Le mettre ailleurs:
-"mv /var/lib/docker/volumes/mon_volume /home/nicolas/serveurWeb"
+    "mv /var/lib/docker/volumes/mon_volume /home/nicolas/serveurWeb"
+    
 Mettre page HTML du dossier github dans le volume dans la directory "_data"
 
 
-créer l'image avec :
-"docker build -t [web] . " à l'endroit où se trouve le deocker file !!! ne pas oublier le point !!!
+-------------------------------
+CREATION DE L'IMAGE
+------------------------------- 
+A l'endroit où se trouve le docker file !!! Ne pas oublier le point !!!
+  "docker build -t [web] . " 
 
+-------------------------------
+CREATION DU CONTENEUR
+AVEC PORTS DEMANDES
+-------------------------------
 Créer le conteneur avec les ports adaptés:
-//"docker run -p 8080:80 -d --name [conteneur name] [image name]"
-// conteneur 80 et hote 80 (le premier)
-// tenter avec volume :
-//"docker run -p 80:80 -d --name [conteneur name] -v /home/nicolas/serveurWeb/mon_volume:/var/www/html [web
-"docker run -p 80:80 -d --name [conteneur name] -v /home/nicolas/Admin-Reseau/mon_volume:/var/www/html [web]"
+  //"docker run -p 8080:80 -d --name [conteneur name] [image name]"
+  // conteneur 80 et hote 80 (le premier)
+  // tenter avec volume :
+  //"docker run -p 80:80 -d --name [conteneur name] -v /home/nicolas/serveurWeb/mon_volume:/var/www/html [web
+  "docker run -p 80:80 -d --name [conteneur name] -v /home/nicolas/Admin-Reseau/mon_volume:/var/www/html [web]"
 
-// endroit du volume sur conteneur web ==> "/var/www/html"
-// MAIS copie manuelle du dossier github partagé (à mettre à jour avec "git pull origin master")
-// et copier fichier nécessaire (.html, css ...) dans le volume partagé
-// 
+  // endroit du volume sur conteneur web ==> "/var/www/html"
+  // MAIS copie manuelle du dossier github partagé (à mettre à jour avec "git pull origin master")
+  // et copier fichiers nécessaires (.html, css ...) dans le volume partagé
 
-Pour aller mettre une page web SUR le conteneur DANS "www/site" , il faut créer la directory "Site" dans "www"  . Il faut envoyer le fichier
-dynamiquement en utilisant un volume ==> dossier partager entre le conteneur et le vps :
+-------------------------------
+COMMENTAIRES GENERAUX
+-------------------------------
+Pour aller mettre une page web SUR le conteneur DANS "www/site" , il faut créer la directory "Site" dans "www".
+Il faut envoyer le fichier dynamiquement en utilisant un volume ==> dossier partagé entre le conteneur et le vps :
 
-tester:
+-------------------------------
+A TESTER
+-------------------------------
 http://54.37.65.113/Site%20vitrine.html
 http://54.37.65.113
 
