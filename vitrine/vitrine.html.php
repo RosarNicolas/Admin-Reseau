@@ -59,13 +59,11 @@
 			<hr>
 			<p>Bienvenue sur notre page de test.</p>
 			<h3>Liens vers nos autres sites web :</h3>
-			<p>
-				Site Intranet : 
-				<a href=http://54.37.65.113:82/intranet.html alt="Site intranet">intranet.wt3.ephec-ti.be</a>
+			<p> 
+				<a href=http://54.37.65.113:82/intranet.html.php alt="Site intranet">INTRANET</a>
 			</p>
 			<p>
-				Site business : 
-				<a href=http://54.37.65.113:83/b2B.html alt="Site intranet">b2B</a>
+				<a href=http://54.37.65.113:83/b2B.html.php alt="Site intranet">Lien vers le B2B</a>
 			</p>
 			<p>
 				<? echo $test1="PHP marche"; ?>
