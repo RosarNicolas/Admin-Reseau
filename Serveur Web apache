@@ -23,6 +23,10 @@ Créer le conteneur avec les ports adaptés:
 //"docker run -p 80:80 -d --name [conteneur name] -v /home/nicolas/serveurWeb/mon_volume:/var/www/html [web]"
 "docker run -p 80:80 -d --name [conteneur name] -v /home/nicolas/Admin-Reseau/mon_volume:/var/www/html [web]"
 
+// copier dans volume ce qui arrive via git hub
+sudo cp intranet/intranet.html mon_volume/intranet.html
+sudo cp vitrine/vitrine.html mon_volume/vitrine.html
+
 // conteneur vitrine
 "docker run -p 81:80 -d --name vitrine -v /home/nicolas/Admin-Reseau/mon_volume:/var/www/html web"
 "docker run -p 82:80 -d --name intranet -v /home/nicolas/Admin-Reseau/mon_volume:/var/www/html web"
