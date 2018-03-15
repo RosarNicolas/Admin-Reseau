@@ -92,4 +92,12 @@ VERIFIER LES DONNEES
 select * from users;
 select * from products;
 
+-----------------------------
+SE CONNECTER A LA DB
+-----------------------------
+	docker exec -it mysql101 mysql -uroot -p
 
+Sélectionner la database à utiliser :
+	use DB_NAME
+
+S'amuser avec les requêtes ...
