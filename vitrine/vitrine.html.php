@@ -67,8 +67,7 @@
 				<a href=http://54.37.65.113:83/b2B.html.php alt="Site intranet">Lien vers le B2B</a>
 			</p>
 			<p>
-				<? echo $test1="PHP marche"; ?><br>
-				<? echo $test2="CA NE MARCHE PAS CA N'A PAS DE JAMBES"; ?>
+				<?php include 'dbConnect.php';?>
 			</p>
 			<p hidden>
 				
