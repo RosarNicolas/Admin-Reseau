@@ -8,7 +8,7 @@ Récupérer l'image Docker MySQL :
 	docker pull mysql/mysql-server:latest
 
 Déployer le container : 
-	docker run --name=mysql101 -d mysql/mysql-server:latest
+	docker run --name=mysql101 -d -p 3306:3306 mysql/mysql-server:latest
 
 Vérifier que le container tourne bien :
 	docker ps
@@ -55,41 +55,40 @@ Vérifier qu'on est dans la bonne db :
 BACKUP LA DB 
 -----------------------------
 mysqldump docker_project > docker_project_backup.sql
-
 ERROR
 
 -----------------------------
 CREER LES TABLES
 -----------------------------
-mysql> create table users(
+mysql> create table user(
     -> NOM varchar(20) not null,
     -> PRENOM varchar(10) not null,
     -> CLASSE char(4) not null,
     -> primary key (NOM,PRENOM,CLASSE));
 
 mysql> create table products(
-    -> ID int not null auto_increment,
-    -> NOM varchar(40) not null,
-    -> DESCRIPTION varchar(100) not null,
-    -> PRIX float(8,2) not null,
-    -> QUANTITE int not null,
-    -> primary key (ID));
+     ID int not null auto_increment,
+     NOM varchar(40) not null,
+     DESCRIPTION varchar(100) not null,
+     PRIX float(8,2) not null,
+     QUANTITE int not null,
+     primary key (ID));
 
 -----------------------------
 INSERER LES DONNEES
 -----------------------------
-insert into users values("PERSYN", "Loic", "2TL1");
-insert into users values("VANKEERBERGHEN", "Jordan", "2TL1");
-insert into users values("ROSAR", "Nicolas", "2TL1");
+insert into user values("PERSYN", "Loic", "2TL1");
+insert into user values("VANKEERBERGHEN", "Jordan", "2TL1");
+insert into user values("ROSAR", "Nicolas", "2TL1");
 
 insert into products (NOM, DESCRIPTION, PRIX, QUANTITE) values ("Baril Kapla 200 pieces bois", "Kapla est un jeu de construction en pin des Landes destine a des enfants de 3 ans et plus.", 39.99, 53);
 insert into products (NOM, DESCRIPTION, PRIX, QUANTITE) values ("Jeu de Mikado en bois", "Grand traditionnel des jeux en bois, le Mikado.", 3.99, 33);
-insert into products (NOM, DESCRIPTION, PRIX, QUANTITE) values ("Maisonnette Bois Summer Lodge", "Disponible uniquement chez Toys R Us, la maisonnette en bois TP Summer Lodge est idale pour stimuler l'esprit cratif des enfants qui auront enfin un endroit rien qu' eux pour vivre leurs aventures.", 169.99, 15);
+insert into products (NOM, DESCRIPTION, PRIX, QUANTITE) values ("Maisonnette Bois Summer Lodge", "Disponible uniquement chez Toys R Us.", 169.99, 15);
 
 -----------------------------
 VERIFIER LES DONNEES
 -----------------------------
-select * from users;
+select * from user;
 select * from products;
 
 -----------------------------
