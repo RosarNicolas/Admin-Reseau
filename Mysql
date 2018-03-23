@@ -1,7 +1,0 @@
-# Télécharger une image mysql :
-docker pull mysql/mysql-server:latest
-
-# créer un conteneur
-docker run --name dbsql  -e MYSQL_ROOT_PASSWORD=mdpLOL -d mysql:latest
-
-# Les autres container voient ce conteneur sur le port standard (3306)
