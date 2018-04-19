@@ -1,1 +1,5 @@
+Fournir tout les droits à l'utilisateur avec lequel on se co à la database
+
+si cela ne fonctionne toujours pas, essayer :
+
 docker run -d -name app-container-name --link mysql-container-name app-image-name
