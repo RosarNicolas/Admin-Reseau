@@ -35,8 +35,6 @@
 				border-radius: 1em;		
 			}
 			footer{
-				position: fixed;
-				bottom: 0;
 				width:100%;
 				color: white;
 				background-color: blue;
