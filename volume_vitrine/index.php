@@ -26,7 +26,7 @@
 				<a href="#" class="button-1">Par ici</a>
 			</div>	
 		</section>
-		<!--
+		
 		<section id="steps">
 			<div class="wrapper">
 				<ul>
@@ -45,7 +45,7 @@
 				</ul>
 			</div>	
 		</section>
-		-->
+		
 		
 		<section id="contact">
 			<div class="wrapper">
