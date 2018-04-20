@@ -12,7 +12,7 @@ catch (Exception $e)
 }
 }
 
-connect('54.37.65.113','nicolas','jeSaisPasQuoi','docker_project');
+connect('54.37.65.115:3306','nicolas','jeSaisPasQuoi','docker_project');
 //54.35.65.115:3306
 
 ?>
