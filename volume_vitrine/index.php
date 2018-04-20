@@ -71,7 +71,7 @@
 				<?php
 				$req = 'USE docker_project;SELECT * FROM user;';
 				$rep = $dbh->query($req, PDO::FETCH_ASSOC);
-				echo '<pre>'.$rep.'</pre>';
+				echo '<pre>'.print_r($rep->fetchAll(),1).'</pre>';
 				?>
 				
 			</p>
