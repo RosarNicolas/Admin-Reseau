@@ -28,7 +28,7 @@
 		</section>
 		
 		<section id="steps">
-			<div class="wrapper">
+			<div id=wrapper_plan class="wrapper">
 				<ul>
 					<li id="step-1">
 					<h4>Planifier</h4>
