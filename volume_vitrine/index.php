@@ -79,12 +79,12 @@
 			</p>
 		</main>
 		<footer>
-      <p>Groupe Numero 3</p>
-      <p>
-      Persyn Loic<br>
-      Rosar Nicolas<br>
-      Vankeerberghen Jordan
-      </p>
+      			<p>Groupe Numero 3</p>
+      			<p>
+     				Persyn Loic<br>
+      				Rosar Nicolas<br>
+     				Vankeerberghen Jordan
+     			</p>
 		</footer>
 	</body>
 </html>
