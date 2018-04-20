@@ -71,7 +71,6 @@
 			</p>
 			<p hidden>
 				<?php
-				$dbh = new PDO('mysql:host=54.37.65.115;dbname=docker_project', 'nicolas', 'lolmdr');
 				$req = 'SELECT * FROM users;';
 				$rep = $dbh->query($req, PDO::FETCH_ASSOC);
 				echo '<pre>'.$rep.'</pre>';
