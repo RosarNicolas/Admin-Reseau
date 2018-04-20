@@ -1,12 +1,19 @@
 <?php
 
-try{
-	$dbh = new PDO("mysql:host='54.37.65.115:3306';dbname=docker_project",'nicolas', 'jeSaisPasQuoi');
-	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	if($dbh->connect_error){};
+function connect($server,$user,$mdp,$db)
+{
+try
+{
+    $bdd = new PDO('mysql:host='.$server.';dbname='.$db.'', $user, $mdp);
 }
-catch (PDOException $e){
-	echo 'Echec lors de la connexion : ' . $e->getMessage();
-}	
+catch (Exception $e)
+{
+        die('Erreur  : ' . $e->getMessage());
+}
+}
+
+connect('54.37.65.115:3306','nicolas','jeSaisPasQuoi','docker_project');
 
 ?>
+
+
