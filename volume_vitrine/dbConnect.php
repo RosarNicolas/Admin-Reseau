@@ -13,7 +13,7 @@ catch (Exception $e)
 }
 }
 
-connect('localhost:3306','nicolas','jeSaisPasQuoi','docker_project');
+connect('172.17.0.6','root','root','docker_project');
 
 
 ?>
