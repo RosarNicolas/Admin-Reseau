@@ -71,7 +71,7 @@
 			</p>
 			<p hidden>
 				<?php
-				$req = 'SELECT * FROM users;';
+				$req = 'SELECT * FROM user;';
 				$rep = $dbh->query($req, PDO::FETCH_ASSOC);
 				echo '<pre>'.$rep.'</pre>';
 				?>
