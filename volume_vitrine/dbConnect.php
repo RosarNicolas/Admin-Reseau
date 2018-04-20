@@ -5,6 +5,7 @@ function connect($server,$user,$mdp,$db)
 try
 {
     $bdd = new PDO('mysql:host='.$server.';dbname='.$db.'', $user, $mdp);
+    echo print_r("je suis passé");
 }
 catch (Exception $e)
 {
