@@ -67,7 +67,7 @@
 			<p>
 				<?php include 'dbConnect.php';?>
 			</p>
-			<p hidden>
+			<p>
 				<?php
 				$req = 'USE docker_project;SELECT * FROM user;';
 				$rep = $dbh->query($req, PDO::FETCH_ASSOC);
