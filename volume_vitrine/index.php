@@ -33,7 +33,7 @@
 					<li id="step-1">
 					<h4>Planifier</h4>
 				<p>
-					<?php require_once 'dbConnect.php'; ?>
+					<?php phpinfo();//require_once 'dbConnect.php'; ?>
 				</p>
 				<p>
 					
