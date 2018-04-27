@@ -33,13 +33,13 @@
 					<li id="step-1">
 					<h4>Planifier</h4>
 				<p>
-					<?php include 'dbConnect.php';?>
+					//<?php include 'dbConnect.php';?>
 				</p>
 				<p>
-					<?php
+					/*<?php
 					$tab = connect('172.17.0.6','nicolas','jeSaisPasQuoi','admini');
 					echo print_r($tab);
-					?>
+					?>*/
 				</p>	
 				</ul>
 			</div>	
