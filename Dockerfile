@@ -2,7 +2,7 @@
 
 # utilisation image ubuntu (la plus récente)
 FROM ubuntu:latest
-FROM php:7.0
+#FROM php:7.0
 # set le champ auteur de l'image
 MAINTAINER Rosar Nicolas
 
@@ -30,7 +30,7 @@ RUN a2enmod rewrite
 RUN ["apt-get", "update"]
 RUN ["apt-get", "install", "-y", "vim"]
 # ligne pour le driver pdo mysql
-RUN docker-php-ext-install pdo pdo_mysql
+#RUN docker-php-ext-install pdo pdo_mysql
 
 ################ verifier signification des élément suivants
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
