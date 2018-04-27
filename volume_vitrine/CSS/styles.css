@@ -89,7 +89,8 @@ header nav ul li a{
 /* MAIN IMAGE */
 #main-image{
 	height:550px;
-	background: url('../IMG/main.jpg') center;
+	width:100%;
+	background: url('../IMG/jouets_bois.jpg') center no-repeat;
 }
 #main-image h2{
 	font-weight:normal;
@@ -97,6 +98,8 @@ header nav ul li a{
 	text-align: center;
 	padding:150px 0 40px 0;
 	margin: 20px;
+	color: white;
+	text-shadow: 0 0 5px #000000;
 }
 .button-1{
 	display:block;
