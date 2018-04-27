@@ -37,9 +37,8 @@
 				</p>
 				<p>
 					<?php
-					$req = 'USE docker_project;SELECT * FROM user;';
-					$rep = $dbh->query($req, PDO::FETCH_ASSOC);
-					echo '<pre>'.print_r($rep->fetchAll(),1).'</pre>';
+					$tab = connect('172.17.0.6','nicolas','jeSaisPasQuoi','admini');
+					echo print_r($tab);
 					?>
 				</p>	
 				</ul>
