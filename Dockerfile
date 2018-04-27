@@ -2,6 +2,7 @@
 
 # utilisation image ubuntu (la plus récente)
 FROM ubuntu:latest
+FROM PHP:7.0-apache
 # set le champ auteur de l'image
 MAINTAINER Rosar Nicolas
 
