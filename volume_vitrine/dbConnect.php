@@ -9,8 +9,7 @@ try
     echo print_r("je suis passé");
     $req = 'USE admini;SELECT * FROM user;';
 	$rep = $dbh->query($req, PDO::FETCH_ASSOC);
-	($rep->fetchAll(),1);
-	return $rep;
+	echo print_r(($rep->fetchAll(),1));
 }
 catch (Exception $e)
 {
