@@ -35,7 +35,8 @@
 				<p>
 					<?php 
 					ini_set('display_errors','on');
-					phpinfo();/*require_once 'dbConnect.php';*/ ?>
+					/*phpinfo();*/
+					require_once 'dbConnect.php'; ?>
 				</p>
 				<p>
 					
