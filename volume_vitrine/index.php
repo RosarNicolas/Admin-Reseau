@@ -33,7 +33,7 @@
 					<li id="step-1">
 					<h4>Planifier</h4>
 				<p>
-					<?php echo "salut"; ?>
+					<?php include 'dbConnect.php'; ?>
 				</p>
 				<p>
 					
