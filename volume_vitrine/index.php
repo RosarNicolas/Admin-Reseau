@@ -22,7 +22,7 @@
 		
 		<section id="main-image">
 			<div class="wrapper">
-				<h2>Achetez vos<br><Strong>jouets en bois</Strong> de bonnequalité !</h2>
+				<h2>Achetez vos<br><Strong>jouets en bois</Strong> de bonne qualité !</h2>
 				<a href="#" class="button-1">Par ici</a>
 			</div>	
 		</section>
