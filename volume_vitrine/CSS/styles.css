@@ -1,35 +1,3 @@
-/* CSS */
-/*
-	NOTES
-1em = 100% ==> taille de base
-2em = 200% (2 fois la taille de base)
-
-p:first-child
-
-(block = par défaut)
-display:block ==> force les blocs suivant à aller à la ligne
-display:inline ==> width et height ne peut être modifiée
-display:inline-block
-display:none
-
-(statique = par défaut)
-position:statique
-
-position:relative ==> donne possibilité d'utiliser autres propriétés
- ex: top, bottom, left et right
-	==> donner espacement depuis ces directions (top:10px)
-
-position:fixed
-(coller en bas à droite => bottom:0px;right:0px;)
-
-position:absolute ==> positionnement par rapport au premier 
-parent sans propriété statique
-
-color:#444 ==> même chose que #444444
-
-par défaut lien==> inline
-*/
-
 /* GENERAL */
 *{
 	margin:0;
@@ -98,7 +66,7 @@ small{
 
 /* HEADER */
 header{
-	height:120px;
+	height:100px;
 }
 header h1{
 	float:left;
@@ -120,7 +88,7 @@ header nav ul li a{
 
 /* MAIN IMAGE */
 #main-image{
-	height:580px;
+	height:550px;
 	background: url('../IMG/main.jpg') center;
 }
 #main-image h2{
@@ -155,14 +123,15 @@ header nav ul li a{
 	margin-bottom:  20px;
 }
 #steps ul{
-	margin:80px 0px;
+	margin:60px 0px;
+	padding-left: 35%;
 }
 #steps ul li{
 	width: 300px;
 	vertical-align:center;
 	padding-top: 140px;
 	text-align: center;
-	margin-right: 10px;
+
 }
 #step-1{
 	background: url('../IMG/steps-icon-1.png') no-repeat top center;
@@ -170,60 +139,11 @@ header nav ul li a{
 #step-2{
 	background: url('../IMG/steps-icon-2.png') no-repeat top center;
 }
-#step-3{
-	background: url('../IMG/steps-icon-3.png') no-repeat top center;
-}
-
-/* POSSIBILITIES */
-#possibilities{
-	background-color: #efefef;
-	padding: 60px 0px;
-}
-
-#possibilities article{
-	width: 460px;
-	height: 270px;
-	float:left;
-	border-radius: 10px;
-}
-#possibilities article:first-child{
-	margin-right: 20px;
-}
-.overlay{
-	background: rgba(255,255,255,0.95);
-	height: 93%;
-	width:190px;
-	/*padding: 20px;*/
-	padding: 20px 20px 0 20px;
-	border-radius: 10px 0 0 10px;
-	text-align: center;
-}
-article h4{
-	border-bottom: 1px solid #ddd;
-	padding-bottom: 20px;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	text-align: center;
-}
-#possibilities p{
-	text-align: center;
-	margin-bottom: 20px;
-}
-.button-2{
-	color:#fff;
-	background-color: #ff7a00;
-	padding:6px 20px;
-	border-radius: 3px;
-}
-.button-2:hover{
-	color:#fff;
-	background-color: #02b8dd;
-}
 
 /* CONTACT */
 
 #contact{
-	padding:60px 0;
+	padding:45px 0;
 	text-align: center;
 	
 }
@@ -234,10 +154,6 @@ article h4{
 	margin: 0 auto 20px auto;
 	border-bottom: 1px solid #02b8dd;
 	padding-bottom: 20px;
-}
-
-form{
-	margin: 60px 0 20px 0;
 }
 
 label{
@@ -272,13 +188,13 @@ input[type="text"]{
 
 /* FOOTER */
 footer{
-	height:260px;
+	height:200px;
 	background-color: #444;
 }
 footer h1{
 	color:#fff;
 	text-align: center;
-	padding-top:80px;
+	padding-top:50px;
 }
 .copyright{
 	text-align: center;
