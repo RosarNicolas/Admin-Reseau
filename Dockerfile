@@ -28,6 +28,8 @@ RUN a2enmod php7.0
 RUN a2enmod rewrite
 RUN ["apt-get", "update"]
 RUN ["apt-get", "install", "-y", "vim"]
+# ligne pour le driver pdo mysql
+RUN ["docker-php-ext-install", "pdo_mysql"]
 
 ################ verifier signification des élément suivants
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
