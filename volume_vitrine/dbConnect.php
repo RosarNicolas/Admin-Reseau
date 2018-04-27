@@ -18,7 +18,7 @@ catch (Exception $e)
 }
 }
 
-//connect('172.17.0.6','nicolas','jeSaisPasQuoi','docker_project');
+connect('172.17.0.6','nicolas','jeSaisPasQuoi','docker_project');
 //172.17.0.4 adresse container VPS à la place de .6 qui est mySQL 
 
 
