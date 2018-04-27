@@ -33,7 +33,9 @@
 					<li id="step-1">
 					<h4>Planifier</h4>
 				<p>
-					<?php phpinfo();/*require_once 'dbConnect.php';*/ ?>
+					<?php 
+					ini_set('display_errors','on');
+					phpinfo();/*require_once 'dbConnect.php';*/ ?>
 				</p>
 				<p>
 					
