@@ -96,7 +96,7 @@ header nav ul li a{
 #main-image{
 	height:550px;
 	width:100%;
-	background: url('../IMG/jouets_bois.jpg') center no-repeat;
+	background: url('IMG/jouets_bois.jpg') center no-repeat;
 }
 #main-image h2{
 	font-weight:normal;
@@ -143,10 +143,10 @@ header nav ul li a{
 
 }
 #step-1{
-	background: url('../IMG/steps-icon-1.png') no-repeat top center;
+	background: url('IMG/steps-icon-1.png') no-repeat top center;
 }
 #step-2{
-	background: url('../IMG/steps-icon-2.png') no-repeat top center;
+	background: url('IMG/steps-icon-2.png') no-repeat top center;
 }
 
 /* CONTACT */
