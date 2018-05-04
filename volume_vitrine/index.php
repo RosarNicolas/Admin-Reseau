@@ -3,9 +3,7 @@
     <head>
         <title>wt3 woodytoys</title>
         <meta charset=utf-8>
-	    <style>
-
-	    </style>
+	<link rel="stylesheet" href="CSS/styles.css>
 		<link rel=stylesheet href="http://fonts.googleapis.com/css?family=Crete+Round">
     </head>
     <body>
