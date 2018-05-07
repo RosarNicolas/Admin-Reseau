@@ -22,11 +22,12 @@ MAINTAINER Rosar Nicolas
 # (et serveurs HTTP, FTP ...)
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apache2 php7.0 libapache2-mod-php7.0 curl lynx-cur
+    apache2 php7.0 php7.0-mysql libapache2-mod-php7.0 curl lynx-cur
     
 # Activer les modes apaches
 RUN a2enmod php7.0
 RUN a2enmod rewrite
+RUN a2enmod php7.0-mysql
 #RUN ["apt-get", "update"]
 Run apt-get update
 #RUN ["apt-get", "install", "-y", "vim"]
