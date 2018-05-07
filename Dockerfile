@@ -21,10 +21,8 @@ MAINTAINER Rosar Nicolas
 # => lynx-cur = client web en ligne de commande. Affiche les documents HTML contenant des liens vers le système local
 # (et serveurs HTTP, FTP ...)
 
-RUN apt-add-repository ppa:ondrej/php
-
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apache2 php7.0 php7.0-mysql curl
+    apache2 php7.0 curl
     
 # Activer les modes apaches
 RUN a2enmod php7.0
