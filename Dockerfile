@@ -27,8 +27,10 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
 # Activer les modes apaches
 RUN a2enmod php7.0
 RUN a2enmod rewrite
-RUN ["apt-get", "update"]
-RUN ["apt-get", "install", "-y", "vim"]
+#RUN ["apt-get", "update"]
+Run apt-get update
+#RUN ["apt-get", "install", "-y", "vim"]
+RUN apt-get install -qy vim
 # ligne pour le driver pdo mysql
 #RUN docker-php-ext-install pdo pdo_mysql
 
