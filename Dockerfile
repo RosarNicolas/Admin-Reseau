@@ -28,13 +28,13 @@ MAINTAINER Rosar Nicolas
 # RUN apt install -y php7.0-mysql php7.0 libapache2-mod-php7.0
 # php7.0-json php7.0-cgi php7.0-curl 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apache2 php7.0 php7.0-mysql libapache2-mod-php7.0 curl lynx-cur
+    apache2 php7.2 php7.2-mysql libapache2-mod-php7.2 curl lynx-cur
 
 
 
 
-RUN apt purge libapache2-mod-php7.0 libapache2-mod-php
-RUN apt install libapache2-mod-php7.0 libapache2-mod-php
+#RUN apt purge libapache2-mod-php7.0 libapache2-mod-php
+#RUN apt install libapache2-mod-php7.0 libapache2-mod-php
 
 
 # Install apache, PHP, and supplimentary programs. openssh-server, curl, and lynx-cur are for debugging the container.
@@ -42,7 +42,7 @@ RUN apt install libapache2-mod-php7.0 libapache2-mod-php
 #    apache2 php7.0  curl # php7.0-mysql libapache2-mod-php7.0 lynx-cur
 
 # Enable apache mods.
-RUN a2enmod php7.0
+RUN a2enmod php7.2
 RUN a2enmod rewrite
 
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
