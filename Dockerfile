@@ -22,9 +22,9 @@ MAINTAINER Rosar Nicolas
 # (et serveurs HTTP, FTP ...)
 
 RUN apt-get update
-# RUN apt-get install -y software-properties-common
-# RUN add-apt-repository ppa:ondrej/php
-# RUN apt-get update
+RUN apt-get install -y software-properties-common
+RUN add-apt-repository ppa:ondrej/php
+RUN apt-get update
 RUN apt install -y php7.0-mysql php7.0 libapache2-mod-php7.0
 # php7.0-json php7.0-cgi php7.0-curl 
 
