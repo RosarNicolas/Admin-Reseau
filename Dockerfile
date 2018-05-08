@@ -21,6 +21,7 @@ MAINTAINER Rosar Nicolas
 # => lynx-cur = client web en ligne de commande. Affiche les documents HTML contenant des liens vers le système local
 # (et serveurs HTTP, FTP ...)
 
+RUN apt-get update
 RUN apt-get install python-software-properties
 RUN add-apt-repository ppa:ondrej/php
 RUN apt-get update
