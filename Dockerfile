@@ -28,7 +28,7 @@ MAINTAINER Rosar Nicolas
 # RUN apt install -y php7.0-mysql php7.0 libapache2-mod-php7.0
 # php7.0-json php7.0-cgi php7.0-curl 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apache2 php7.2 php7.2-mysql libapache2-mod-php7.2 curl lynx-cur
+    apache2 php7.2 php7.2-mysql libapache2-mod-php7.2 curl #lynx-cur
 
 
 
