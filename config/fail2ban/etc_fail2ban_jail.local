@@ -1,0 +1,25 @@
+[DEFAULT]
+ignoreip = 127.0.0.1 54.37.65.113
+# nombre négatif pour ban pr toujours
+# 10800 = 3 heures
+bantime = 10800
+# findtime ==> ban un hote si il a dépassé les maxentry durant ce findtime
+# 86400 = 1 jour
+findtime = 86400
+maxretry = 5
+
+[f2b-loop2]
+enabled = true
+filter = f2b-loop
+bantime = 86400 // 1 jour
+findtime = 604800  // 1 semaine
+logpath = /var/log/fail2ban.log
+maxretry = 3
+
+[f2b-loop3]
+enabled = true
+filter = f2b-loop
+bantime = 604800 // 1 semaine
+findtime = 2592000  // 1 mois
+logpath = /var/log/fail2ban.log
+maxretry = 3
