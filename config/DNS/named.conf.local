@@ -1,0 +1,12 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+zone "wt3.ephec-ti.be" {
+             type master;
+             file "/data/bind/etc/zones/db.wt3.ephec-ti.be";
+             allow-transfer { 127.0.0.1; }; // n'autoriser la récursion qu'en local
+};
