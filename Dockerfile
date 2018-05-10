@@ -12,14 +12,13 @@ MAINTAINER Rosar Nicolas
 # => apt-get -y upgrade = mise à jour des derniers packages 
 # => noninteractive = mettre en palce un envirronement avec lequel on n'interagit pas.
 # => apache2 = installation package de apache
-# => pfp7.0 = installation package php version 7.0
+# => pfp7.2 = installation package php version 7.2
 # => libapache2-mod-php7.0 = langage de script inclus dans du HTML et exécuté coté serveur
 # => curl = installation package curl
-# => lynx-cur = client web en ligne de commande. Affiche les documents HTML contenant des liens vers le système local
 # (et serveurs HTTP, FTP ...)
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apache2 php7.2 php7.2-mysql libapache2-mod-php7.2 curl #lynx-cur
+    apache2 php7.2 php7.2-mysql libapache2-mod-php7.2 curl 
 
 # Enable apache mods.
 RUN a2enmod php7.2
