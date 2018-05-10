@@ -1,11 +1,8 @@
-#A Dans le fichier créé s'appelant "Dockerfile" :
-
 # utilisation image ubuntu (la plus récente)
 FROM ubuntu:latest
-#FROM php:7.0
-# set le champ auteur de l'image
-MAINTAINER Rosar Nicolas
 
+# set le champ auteur de l'image (qui garde l'image à jour)
+MAINTAINER Rosar Nicolas
 
 # apt-get => fonctionne en tant que root
 # => RUN = exécute n'importe quelle commande shell OU (2 ème forme du run ==> lancer un exécutable)
@@ -21,33 +18,12 @@ MAINTAINER Rosar Nicolas
 # => lynx-cur = client web en ligne de commande. Affiche les documents HTML contenant des liens vers le système local
 # (et serveurs HTTP, FTP ...)
 
-# RUN apt-get update
-# RUN apt-get install -y software-properties-common
-# RUN add-apt-repository ppa:ondrej/php
-# RUN apt-get update
-# RUN apt install -y php7.0-mysql php7.0 libapache2-mod-php7.0
-# php7.0-json php7.0-cgi php7.0-curl 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     apache2 php7.2 php7.2-mysql libapache2-mod-php7.2 curl #lynx-cur
-
-
-
-
-#RUN apt purge libapache2-mod-php7.0 libapache2-mod-php
-#RUN apt install libapache2-mod-php7.0 libapache2-mod-php
-
-
-# Install apache, PHP, and supplimentary programs. openssh-server, curl, and lynx-cur are for debugging the container.
-#RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-#    apache2 php7.0  curl # php7.0-mysql libapache2-mod-php7.0 lynx-cur
 
 # Enable apache mods.
 RUN a2enmod php7.2
 RUN a2enmod rewrite
-
-# Update the PHP.ini file, enable <? ?> tags and quieten logging.
-#RUN sed -i "s/short_open_tag = Off/short_open_tag = On/" /etc/php/7.0/apache2/php.ini
-#RUN sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /etc/php/7.0/apache2/php.ini
 
 # Manually set up the apache environment variables
 ENV APACHE_RUN_USER www-data
