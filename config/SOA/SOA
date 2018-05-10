@@ -1,4 +1,3 @@
-
 $TTL 3600
 $ORIGIN wt3.ephec-ti.be.
 @       IN SOA  ns1.wt3.ephec-ti.be. he201426.students.ephec-ti.be.(
