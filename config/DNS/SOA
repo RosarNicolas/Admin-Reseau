@@ -1,11 +1,11 @@
 $TTL 3600
 $ORIGIN wt3.ephec-ti.be.
 @       IN SOA  ns1.wt3.ephec-ti.be. he201426.students.ephec-ti.be.(
-		     2018051802		; Serial
-		   3600		; Refresh
-		   3000		; Retry
-		1209600		; Expire
-		 604800 )	; Negative Cache TTL
+		                  2018051802		; Serial
+		                  3600		        ; Refresh
+		                  3000		        ; Retry
+		                  1209600		; Expire
+		                  604800 )	        ; Negative Cache TTL
 
 ;
 @		IN	NS	ns1.wt3.ephec-ti.be.
