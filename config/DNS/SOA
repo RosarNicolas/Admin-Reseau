@@ -1,0 +1,21 @@
+$TTL 3600
+$ORIGIN wt3.ephec-ti.be.
+@       IN SOA  ns1.wt3.ephec-ti.be. he201426.students.ephec-ti.be.(
+		     2018051802		; Serial
+		   3600		; Refresh
+		   3000		; Retry
+		1209600		; Expire
+		 604800 )	; Negative Cache TTL
+
+;
+@		IN	NS	ns1.wt3.ephec-ti.be.
+@		IN	MX	10 mail
+ns1		IN	A	54.37.65.113
+mail		IN	A	54.37.65.113
+web		IN	A	54.37.65.113
+vitrine 	IN	CNAME	web
+intranet	IN	CNAME	web
+b2b		IN	CNAME	web
+;smtp		IN	CNAME	mail
+;pop3		IN	CNAME	mail
+;imap		IN	CNAME	mail
