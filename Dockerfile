@@ -60,7 +60,9 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 EXPOSE 80
 
 # Update du site apache par défaut avec le fichier de configuration "apache-config.conf"
-ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
+ADD vitrine.conf /etc/apache2/sites-enabled/vitrine.conf
+ADD intranet.conf /etc/apache2/sites-enabled/intranet.conf
+ADD b2b.conf /etc/apache2/sites-enabled/b2b.conf
 
 # Commande shell qui démarre apache en arrière-plan par défaut et exécute /bin/bash pour interagir
 CMD /usr/sbin/apache2ctl -D FOREGROUND
