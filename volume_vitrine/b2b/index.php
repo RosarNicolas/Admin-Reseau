@@ -3,7 +3,7 @@
 <html lang=fr>
 	<head>
 		<meta charset="utf-8">
-		<title>Intranet</title>
+		<title>B2b</title>
 		<style>
 
 		body {
