@@ -25,7 +25,7 @@
 			bottom: 0;
 			width:100%;
 			color: white;
-			background-color: blue;
+			background-color: #444;
 			border-top : 5px solid black;
 			
 		}
