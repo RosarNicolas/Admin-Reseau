@@ -99,6 +99,7 @@ header nav ul li a{
 	height:550px;
 	width:100%;
 	background: url('../IMG/jouets_bois.jpg') center no-repeat;
+	background-color: #444;
 }
 #main-image h2{
 	font-weight:normal;
