@@ -20,6 +20,17 @@
 		h1 {
 			text-align : center;
 		}
+		
+		footer{
+			position: fixed;
+			top 0;
+			width:100%;
+			color: white;
+			background-color: #444;
+			border-bottom : 5px solid black;
+			
+		}	
+			
 		footer{
 			position: fixed;
 			bottom: 0;
