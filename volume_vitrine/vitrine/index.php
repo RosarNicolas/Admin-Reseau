@@ -1,9 +1,8 @@
-<!DOCTYPE html> <!-- définir la page en tant que html -->
+<!DOCTYPE html>
 <html lang=fr>
     <head>
         <title>wt3 woodytoys</title>
         <meta charset=utf-8>
-	
 		<link rel=stylesheet href="http://fonts.googleapis.com/css?family=Crete+Round">
 	    <style>
 	     /* GENERAL */
@@ -69,8 +68,6 @@ small{
 	font-size: 13px;
 	font-style: italic;
 }
-
-
 
 /* HEADER */
 header{
