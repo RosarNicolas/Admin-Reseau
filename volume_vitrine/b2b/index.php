@@ -3,7 +3,7 @@
 <html lang=fr>
 	<head>
 		<meta charset="utf-8">
-		<title>Intranet</title>
+		<title>B2b</title>
 		<style>
 
 		body {
@@ -20,12 +20,23 @@
 		h1 {
 			text-align : center;
 		}
+		
+		header{
+			position: fixed;
+			top 0;
+			width:100%;
+			color: white;
+			background-color: #444;
+			border-bottom : 5px solid black;
+			
+		}	
+			
 		footer{
 			position: fixed;
 			bottom: 0;
 			width:100%;
 			color: white;
-			background-color: blue;
+			background-color: #444;
 			border-top : 5px solid black;
 			
 		}

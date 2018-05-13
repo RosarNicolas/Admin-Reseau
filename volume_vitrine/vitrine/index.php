@@ -1,9 +1,8 @@
-<!DOCTYPE html> <!-- définir la page en tant que html -->
+<!DOCTYPE html>
 <html lang=fr>
     <head>
         <title>wt3 woodytoys</title>
         <meta charset=utf-8>
-	
 		<link rel=stylesheet href="http://fonts.googleapis.com/css?family=Crete+Round">
 	    <style>
 	     /* GENERAL */
@@ -70,8 +69,6 @@ small{
 	font-style: italic;
 }
 
-
-
 /* HEADER */
 header{
 	height:100px;
@@ -99,6 +96,7 @@ header nav ul li a{
 	height:550px;
 	width:100%;
 	background: url('../IMG/jouets_bois.jpg') center no-repeat;
+	background-color: #444;
 }
 #main-image h2{
 	font-weight:normal;
@@ -147,76 +145,6 @@ header nav ul li a{
 #step-1{
 	background: url('../IMG/steps-icon-1.png') no-repeat top center;
 }
-#step-2{
-	background: url('../IMG/steps-icon-2.png') no-repeat top center;
-}
-
-/* CONTACT */
-
-#contact{
-	padding:45px 0;
-	text-align: center;
-	
-}
-
-#contact h3{
-	width:400px;
-	text-transform: uppercase;
-	margin: 0 auto 20px auto;
-	border-bottom: 1px solid #02b8dd;
-	padding-bottom: 20px;
-}
-
-label{
-	font-weight: bold;
-	font-size:20px;
-	margin-right: 10px;
-	color:#777;
-}
-
-input[type="text"]{
-	padding:10px;
-	font-size: 20px;
-	margin-right: 20px;
-	border: 2px solid #ddd;
-	border-radius: 3px;
-}
-
-.button-3{
-	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
-	padding:11px;
-	background-color: #02b8dd;
-	border-style: none;
-	border-radius: 3px;
-}
-
-.button-3:hover{
-	color: #fff;
-	background-color: #444;
-}
-
-/* FOOTER */
-footer{
-	height:200px;
-	background-color: #444;
-}
-footer h1{
-	color:#fff;
-	text-align: center;
-	padding-top:50px;
-}
-.copyright{
-	text-align: center;
-	font-weight: bold;
-	padding-top: 30px;
-	color: #777;
-}
-
-wrapper_plan {
-	vertical-align: center;
-}
 	    </style>
     </head>
     <body>
@@ -248,7 +176,7 @@ wrapper_plan {
 				<p>
 					<?php 
 					ini_set('display_errors','on');
-					phpinfo();
+					/*phpinfo();*/
 					require_once 'dbConnect.php'; ?>
 				</p>
 				<p>
