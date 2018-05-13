@@ -1,4 +1,4 @@
-RUN FROM sameersbn/bind:latest
+FROM sameersbn/bind:latest
 
 MAINTAINER Rosar Nicolas
 
