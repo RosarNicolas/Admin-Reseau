@@ -67,11 +67,11 @@
 			<h3>Liens vers nos autres sites web :</h3>
 			<p>
 				Site vitrine : 
-				<a href=http://54.37.65.113:81/vitrine.html.php alt="Site vitrine">www.wt3.ephec-ti.be</a>
+				<a href=https://vitrine.wt3.ephec-ti.be/ alt="Site vitrine">www.wt3.ephec-ti.be</a>
 			</p>
 			<p>
 				Site business : 
-				<a href=http://54.37.65.113:83/b2B.html.php alt="Site b2B">b2B.wt3.ephec-ti.be</a>
+				<a href=https://b2b.wt3.ephec-ti.be/ alt="Site b2B">b2B.wt3.ephec-ti.be</a>
 			</p>
 		</main>
 		
