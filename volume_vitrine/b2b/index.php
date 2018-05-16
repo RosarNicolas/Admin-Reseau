@@ -68,7 +68,7 @@
 					$sql="select * from user;";
 					$result=mysqli_query($connect,$sql);
 					$row=mysqli_fetch_array($result,MYSQLI_NUM);
-					echo print_r($row);
+					echo print_r($row,1);
 				?>
 			</p>
 		</footer>
