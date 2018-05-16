@@ -63,8 +63,7 @@
 			Groupe Numero 3 :
 			</u></p>
 			<p>
-			<?php $mysqli = new mysqli("database", "admin", "motdepasse");
-			echo $mysqli->server_info ;>
+			
 			</p>
 		</footer>
 	</body>
