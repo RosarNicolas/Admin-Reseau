@@ -62,8 +62,6 @@
 			<p>
 			Woodytoys est une entreprise de conception de jeux en bois pour
 			les enfants en bas âges.
-			<?php $mysqli = new mysqli("database", "admin", "motdepasse");
-			echo $mysqli->server_info ;>
 			</p>
 			<br>
 			<h3>Liens vers nos autres sites web :</h3>
