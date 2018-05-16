@@ -25,3 +25,7 @@ mail._domainkey IN      TXT     ( "v=DKIM1; h=sha256; k=rsa; "
           "7TQ09IJp7gLYy89Z08eqS3/4T/1MgTduUDrRzRjuO0kTzvG1e5Tpg3kObN3r1fRYIFnYc7i0AuDHSemQYFedWjIYXKDopA8lrkkZyjLENBjDJxVzC2nQ3xEcp6ob7YPmVwh0TApwIDAQAB" )  ; ----- DKIM key mail for wt3.ephec-ti.be
 _dmarc          IN      TXT     ("v=DMARC1;p=none;sp=reject;pct=20;" 
         "adkim=r;aspf=r")
+
+_sip._udp		SRV	0	0	5060	sip
+_sip._tcp		SRV 	0	0	5060	sip
+sip			IN	A	54.37.65.113
