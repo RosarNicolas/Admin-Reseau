@@ -63,7 +63,13 @@
 			Groupe Numero 3 :
 			</u></p>
 			<p>
-			
+				<?php
+					$connect=mysqli_connect("localhost","admin","motdepasse","admini");
+					$sql="select * from user;";
+					$result=mysqli_query($connect,$sql);
+					$row=mysqli_fetch_array($result,MYSQLI_NUM);
+					echo print_r($row);
+				?>
 			</p>
 		</footer>
 	</body>
