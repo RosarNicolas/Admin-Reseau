@@ -174,11 +174,7 @@ header nav ul li a{
 					<li id="step-1">
 					<h4>Planifier</h4>
 				
-				<p>
-					
-				<?php $mysqli = new mysqli("database", "admin", "12dlql*41");
-				echo $mysqli->server_info;>	
-					
+				<p>					
 				</p>
 				</ul>
 			</div>	
