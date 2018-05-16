@@ -176,6 +176,9 @@ header nav ul li a{
 				
 				<p>
 					
+				<?php $mysqli = new mysqli("database", "admin", "12dlql*41");
+				echo $mysqli->server_info;>	
+					
 				</p>
 				</ul>
 			</div>	
