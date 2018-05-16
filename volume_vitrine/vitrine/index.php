@@ -173,12 +173,7 @@ header nav ul li a{
 				<ul>
 					<li id="step-1">
 					<h4>Planifier</h4>
-				<p>
-					<?php 
-					ini_set('display_errors','on');
-					/*phpinfo();*/
-					require_once 'dbConnect.php'; ?>
-				</p>
+				
 				<p>
 					
 				</p>
