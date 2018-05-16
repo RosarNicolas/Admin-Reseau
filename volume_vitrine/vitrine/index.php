@@ -174,7 +174,9 @@ header nav ul li a{
 					<li id="step-1">
 					<h4>Planifier</h4>
 				
-				<p>					
+				<p>	
+					<?php $mysqli = new mysqli("database", "admin", "motdepasse");
+					echo $mysqli->server_info ;>
 				</p>
 				</ul>
 			</div>	
