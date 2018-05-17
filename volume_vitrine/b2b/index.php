@@ -95,6 +95,7 @@
 				$dbh->connect();
 				$rq = $dbh->exec('SELECT * FROM eleve;');
 				echo $rq;
+				echo "hguhuhhuhu";
 				?>
 			</p>
 		</footer>
