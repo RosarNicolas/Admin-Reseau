@@ -80,6 +80,7 @@ EOD;
 				$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 				$re = $dbh->query($sqlSelect, PDO::FETCH_ASSOC);
 				echo print_r($rq,1);
+				echo 1;
 				
 				
 				
