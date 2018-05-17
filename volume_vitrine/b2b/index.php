@@ -64,40 +64,37 @@
 			</u></p>
 			<p>
 				<?php
-				/*
-					if($connect=mysqli_connect("localhost","admin","motdepasse","admini")){
-						echo "Succès";	
-					}
-				else{
-					echo "Fail";
+				class Database
+				{
+					private static $dbHost = '172.17.0.3';
+					private static $dbName = "eleve";
+					private static $dbUser = "nicolas";
+					private static $dbPswd = "motdepasse";
+				
+					private static $connection = null;
+				
+				public static function connect()
+				{
+				try
+				{
+					self::$connection = new PDO('mysql:host='.self::$dbHost.';dbname='.self::$dbName,self::$dbUser,slef::$dbPswd);
+					self::$connection->exec('SET NAMES utf8');
 				}
-					*/
-				/*
-$sqlSelect = <<<'EOD'
-SELECT *
-FROM admini.user
-EOD;
-				
-				
-				$dbh = new PDO("mysql:host=172.17.0.3;dbname=admini", "nicolas","motdepasse");
-				$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-				$re = $dbh->query($sqlSelect, PDO::FETCH_ASSOC);
-				echo print_r($rq,1);
-				echo 1;
-				echo $phpinfo();
-			*/
-				include catalogue.php;
-				
-				
-					/*$sql="select * from user;";
-					$result=mysqli_query($connect,$sql);
-					$row=mysqli_fetch_array($result,MYSQLI_NUM);
-					echo print_r($row,1);*/
-				/*
-					echo print_r($connect,1);
-					echo "SUccès ".mysqli_get_host_info($connect);
-						mysqli_close($connect);
-						*/
+				catch(Exception $e)
+				{
+					die($e->getMessage());
+				}
+				return self::$connection;
+				}
+				public static function disconnect()
+				{
+				self::$connection=null;
+				}
+				}
+				$dbh = new Database();
+				$dbh->connect();
+				$rq = $dbh->exec('SELECT * FROM eleve;');
+				echo $rq;
 				?>
 			</p>
 		</footer>
