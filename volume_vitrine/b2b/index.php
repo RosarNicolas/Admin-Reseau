@@ -64,7 +64,7 @@
 			</u></p>
 			<p>
 				<?php
-					if($connect=mysqli_connect("localhost","admin","motdepasse","admini");){
+					if($connect=mysqli_connect("localhost","admin","motdepasse","admini")){
 						echo "Succès";	
 					}
 				else{
