@@ -76,17 +76,14 @@ $sqlSelect = <<<'EOD'
 SELECT *
 FROM admini.user
 EOD;
-				try{
+				
 				
 				$dbh = new PDO("mysql:host=172.17.0.3;dbname=admini", "nicolas","motdepasse");
 				$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 				$re = $dbh->query($sqlSelect, PDO::FETCH_ASSOC);
 				echo print_r($rq,1);
 				echo 1;
-				}
-				catch(PDOException $e){
-					die $e->getMessage();
-				}
+				
 				
 				
 				
