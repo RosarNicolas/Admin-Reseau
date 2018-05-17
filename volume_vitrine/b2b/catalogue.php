@@ -12,7 +12,7 @@ class Database
 				{
 				try
 				{
-					self::$connection = new PDO('mysql:host='.self::$dbHost.';dbname='.self::$dbName,self::$dbUser,slef::$dbPswd);
+					self::$connection = new PDO('mysql:host='.self::$dbHost.';dbname='.self::$dbName,self::$dbUser,self::$dbPswd);
 					self::$connection->exec('SET NAMES utf8');
 				}
 				catch(Exception $e)
