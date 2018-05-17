@@ -64,13 +64,23 @@
 			</u></p>
 			<p>
 				<?php
+				/*
 					if($connect=mysqli_connect("localhost","admin","motdepasse","admini")){
 						echo "Succès";	
 					}
 				else{
 					echo "Fail";
 				}
-					
+					*/
+				
+				
+				$dbh = new PDO("mysql:host=172.17.0.3;dbname=admini", "nicolas","motdepasse");
+				$re = $dbh->query('SELECT * FROM user;', PDO::FETCH_ASSOC);
+				echo print_r($rq);
+				
+				
+				
+				
 					/*$sql="select * from user;";
 					$result=mysqli_query($connect,$sql);
 					$row=mysqli_fetch_array($result,MYSQLI_NUM);
