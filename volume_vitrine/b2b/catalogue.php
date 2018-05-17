@@ -1,7 +1,7 @@
 <?php
 class Database
 				{
-					private static $dbHost = '172.17.0.3';
+					private static $dbHost = 'localhost';
 					private static $dbName = "eleve";
 					private static $dbUser = "nicolas";
 					private static $dbPswd = "motdepasse";
