@@ -10,9 +10,9 @@ if(isset($_POST['produit'])){
   $sqlInsert= "INSERT INTO Produit (id_Product, LIBELLE, PRIX, QSTOCK) VALUES ($sqlValue)";
 }
 try {
-  $dbname = 'WoodyToys';
-  $sourceDeDonnees = 'mysql:host=172.17.0.4;dbname='.$dbname;
-  $dbh = new PDO( $sourceDeDonnees, 'test', 'test' ) ;
+  $dbname = 'admini';
+  $sourceDeDonnees = 'mysql:host=172.17.0.3;dbname='.$dbname;
+  $dbh = new PDO( $sourceDeDonnees, 'nicolas', 'motdepasse' ) ;
   //$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   if(isset($_POST['produit'])){
     $dbh->exec($sqlInsert);
