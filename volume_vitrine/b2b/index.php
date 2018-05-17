@@ -72,10 +72,13 @@
 					echo "Fail";
 				}
 					*/
-				
-				
+$sqlSelect = <<<'EOD'
+SELECT *
+FROM user
+EOD;
 				$dbh = new PDO("mysql:host=172.17.0.3;dbname=admini", "nicolas","motdepasse");
-				$re = $dbh->query('SELECT * FROM user;', PDO::FETCH_ASSOC);
+				$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+				$re = $dbh->query($sqlSelect, PDO::FETCH_ASSOC);
 				echo print_r($rq,1);
 				
 				
