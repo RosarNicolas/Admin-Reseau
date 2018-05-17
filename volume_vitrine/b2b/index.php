@@ -76,7 +76,7 @@
 				
 				$dbh = new PDO("mysql:host=172.17.0.3;dbname=admini", "nicolas","motdepasse");
 				$re = $dbh->query('SELECT * FROM user;', PDO::FETCH_ASSOC);
-				echo print_r($rq);
+				echo print_r($rq,1);
 				
 				
 				
