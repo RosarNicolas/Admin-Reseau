@@ -65,6 +65,7 @@
 			<p>
 				<?php
 				echo "hguhuhhuhu";
+				require_once "catalogue.php";
 				
 				$dbh = new Database();
 				$dbh->connect();
