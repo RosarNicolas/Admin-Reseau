@@ -64,14 +64,22 @@
 			</u></p>
 			<p>
 				<?php
-					$connect=mysqli_connect("localhost","admin","motdepasse","admini");
+					if($connect=mysqli_connect("localhost","admin","motdepasse","admini");){
+						echo "Succès";	
+					}
+				else{
+					echo "Fail";
+				}
+					
 					/*$sql="select * from user;";
 					$result=mysqli_query($connect,$sql);
 					$row=mysqli_fetch_array($result,MYSQLI_NUM);
 					echo print_r($row,1);*/
+				/*
 					echo print_r($connect,1);
 					echo "SUccès ".mysqli_get_host_info($connect);
 						mysqli_close($connect);
+						*/
 				?>
 			</p>
 		</footer>
