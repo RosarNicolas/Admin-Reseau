@@ -64,12 +64,14 @@
 			</u></p>
 			<p>
 				<?php
-				echo "hguhuhhuhu";
+				echo "higigigi";
 				require_once "catalogue.php";
 				
 				$dbh = new Database();
 				$dbh->connect();
+				echo "higi2";
 				$rq = $dbh->exec('SELECT * FROM eleve;');
+				echo "higi 3";
 				echo $rq;
 				
 				?>
