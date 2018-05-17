@@ -74,7 +74,7 @@
 					*/
 $sqlSelect = <<<'EOD'
 SELECT *
-FROM user
+FROM admini.user
 EOD;
 				try{
 				
