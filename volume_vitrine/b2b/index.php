@@ -64,6 +64,7 @@
 			</u></p>
 			<p>
 				<?php
+				echo "hguhuhhuhu";
 				class Database
 				{
 					private static $dbHost = '172.17.0.3';
@@ -95,7 +96,7 @@
 				$dbh->connect();
 				$rq = $dbh->exec('SELECT * FROM eleve;');
 				echo $rq;
-				echo "hguhuhhuhu";
+				
 				?>
 			</p>
 		</footer>
