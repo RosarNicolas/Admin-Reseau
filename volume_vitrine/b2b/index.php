@@ -83,7 +83,7 @@ EOD;
 				$re = $dbh->query($sqlSelect, PDO::FETCH_ASSOC);
 				echo print_r($rq,1);
 				echo 1;
-				
+				echo $_SERVER['infos'];
 				
 				
 				
