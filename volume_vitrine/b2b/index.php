@@ -67,7 +67,10 @@
 				echo "higigigi";
 				require_once "catalogue.php";
 				
+				echo "hig1";
+				
 				$dbh = new Database();
+				echo "higi 1.5";
 				$dbh->connect();
 				echo "higi2";
 				$rq = $dbh->exec('SELECT * FROM eleve;');
