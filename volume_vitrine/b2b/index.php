@@ -72,6 +72,7 @@
 					echo "Fail";
 				}
 					*/
+				/*
 $sqlSelect = <<<'EOD'
 SELECT *
 FROM admini.user
@@ -84,7 +85,8 @@ EOD;
 				echo print_r($rq,1);
 				echo 1;
 				echo $phpinfo();
-				
+			*/
+				include catalogue.php;
 				
 				
 					/*$sql="select * from user;";
