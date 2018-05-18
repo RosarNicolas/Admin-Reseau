@@ -8,7 +8,7 @@
 	}
 	catch(PDOException $e) {echo $e->getMessage();}
 
-	if(isset($_POST['nom'])){
+	if(empty($_POST['nom'])){
 		$req = $pdo->prepare("INSERT INTO user (nom, prenom, classe) VALUES (?, ?, ?)");
 		die("prepare fait<br>");
 			$req->bindParam(1, $name);
