@@ -62,8 +62,10 @@
 			padding: 5px;
 		}
 			
-		#clear{
-			clear:both;	
+		#div{
+			text-align: center;
+			position: absolute;
+			top: 120px;
 		}
 			
 		</style>
