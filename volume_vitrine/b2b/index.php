@@ -61,14 +61,19 @@
 			text-decoration: none;
 			padding: 5px;
 		}
+			
+		#clear{
+			clear:both;	
+		}
+			
 		</style>
 	</head>
 	<body>
 		<header>
 			<h1>Bienvenue dans le b2b de WoodyToys</h1><br>
 		</header>
-		
-		<div>
+		<br id=clear >
+		<div >
 			<form method=POST action="insert.php">
 				<label for=nom >Nom : </label><br>
 				<input type=text id=nom >
