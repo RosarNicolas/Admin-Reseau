@@ -87,7 +87,7 @@
 				
 				<label for=classe >Classe : </label><br>
 				<input type=text id=classe ><br>
-				
+				<br>
 				<input type=submit >
 				
 			</form>
