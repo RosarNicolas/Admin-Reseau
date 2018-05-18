@@ -10,7 +10,7 @@
 
 	if(isset($_POST['nom'])){
 		$req = $pdo->prepare("INSERT INTO user (nom, prenom, classe) VALUES (?, ?, ?)");
-		die "prepare fait<br>";
+		die("prepare fait<br>");
 			$req->bindParam(1, $name);
 			$req->bindParam(2, $prenom);
 			$req->bindParam(3, $classe);
@@ -18,7 +18,7 @@
 			$name = $_POST['nom'];
 			$prenom = $_POST['prenom'];
 			$classe = $_POST['classe'];
-		die "mise dans variables";
+		die ("mise dans variables");
 			$req->execute();
 		
 	}
