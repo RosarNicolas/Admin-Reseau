@@ -96,13 +96,13 @@
 			<br>
 			<form method=POST action="#">
 				<label for=nom >Nom : </label><br>
-				<input type=text id=nom ><br>
+				<input type=text id=nom name=nom ><br>
 				
 				<label for=prenom >Prénom : </label><br>
-				<input type=text id=prenom ><br>
+				<input type=text id=prenom name=prenom ><br>
 				
 				<label for=classe >Classe : </label><br>
-				<input type=text id=classe ><br>
+				<input type=text id=classe name=classe ><br>
 				<br>
 				<input type=submit >
 				
