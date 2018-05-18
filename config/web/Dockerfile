@@ -16,7 +16,7 @@ MAINTAINER Rosar Nicolas
 # => libapache2-mod-php7.0 = langage de script inclus dans du HTML et exécuté coté serveur
 # => curl = installation package curl
 # (et serveurs HTTP, FTP ...)
-RUN add-apt-repository ppa:ondrej/php
+
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     apache2 php7.0 php7.0-mysql libapache2-mod-php7.0 curl lynx-curl
 
