@@ -18,10 +18,11 @@ MAINTAINER Rosar Nicolas
 # (et serveurs HTTP, FTP ...)
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apache2 php7.0 php7.0-mysql libapache2-mod-php7.0 curl lynx-curl
+    apache2 php5
+    #7.0 php7.0-mysql libapache2-mod-php7.0 curl lynx-curl
 
 # Enable apache mods.
-RUN a2enmod php7.0
+#RUN a2enmod php7.0
 RUN a2enmod rewrite
 
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
