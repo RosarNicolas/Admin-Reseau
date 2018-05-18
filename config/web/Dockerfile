@@ -18,14 +18,14 @@ MAINTAINER Rosar Nicolas
 # (et serveurs HTTP, FTP ...)
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apache2 php7.1 php7.1-mysql libapache2-mod-php7.1 curl lynx-curl
+    apache2 php7.2 php7.2-mysql libapache2-mod-php7.2 curl lynx-curl
 
 # Enable apache mods.
-RUN a2enmod php7.1
+RUN a2enmod php7.2
 RUN a2enmod rewrite
 
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
-RUN sed -i "s/short_open_tag = Off/short_open_tag = On/" /etc/php/7.0/apache2/php.ini
+RUN sed -i "s/short_open_tag = Off/short_open_tag = On/" /etc/php/7.2/apache2/php.ini
 RUN sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /etc/php/7.0/apache2/php.ini
 
 # Manually set up the apache environment variables
