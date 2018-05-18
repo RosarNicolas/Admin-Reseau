@@ -73,7 +73,7 @@
 				echo "higi 1.5";
 				$dbh->connect();
 				echo "higi2";
-				$rq = $dbh->exec('SELECT * FROM user;');
+				//$rq = $dbh->exec('SELECT * FROM user;');
 				echo "higi 3";
 				echo $rq;
 				
