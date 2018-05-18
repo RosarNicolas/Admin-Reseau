@@ -18,10 +18,10 @@ MAINTAINER Rosar Nicolas
 # (et serveurs HTTP, FTP ...)
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apache2 php7.2 php7.2-mysql libapache2-mod-php7.2 curl 
+    apache2 php7.0 php7.0-mysql libapache2-mod-php7.0 curl 
 
 # Enable apache mods.
-RUN a2enmod php7.2
+RUN a2enmod php7.0
 RUN a2enmod rewrite
 
 # Manually set up the apache environment variables
