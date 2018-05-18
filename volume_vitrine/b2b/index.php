@@ -63,7 +63,7 @@
 		}
 			
 		div{
-			position: fixed;
+			position: absolute;
 			top 300px;
 			width:100%;
 			
