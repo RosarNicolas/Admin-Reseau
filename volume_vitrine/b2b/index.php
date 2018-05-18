@@ -62,7 +62,7 @@
 			padding: 5px;
 		}
 			
-		#form{
+		div{
 			position: static;
 			top 50px;
 			width:100%;
