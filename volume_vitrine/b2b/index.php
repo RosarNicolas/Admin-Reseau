@@ -64,7 +64,7 @@
 			
 		div{
 			position: static;
-			top 50px;
+			top 200px;
 			width:100%;
 			
 		}
