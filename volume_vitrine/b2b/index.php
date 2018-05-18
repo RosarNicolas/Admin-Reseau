@@ -63,7 +63,7 @@
 		}
 			
 		#form{
-			position: fixed;
+			position: static;
 			top 50px;
 			width:100%;
 			
