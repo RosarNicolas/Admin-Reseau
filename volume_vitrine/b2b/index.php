@@ -64,7 +64,7 @@
 			
 		div{
 			position: fixed;
-			top 200px;
+			top 300px;
 			width:100%;
 			
 		}
@@ -79,13 +79,13 @@
 		<div >
 			<form method=POST action="insert.php">
 				<label for=nom >Nom : </label><br>
-				<input type=text id=nom >
+				<input type=text id=nom ><br>
 				
 				<label for=prenom >Prénom : </label><br>
-				<input type=text id=prenom >
+				<input type=text id=prenom ><br>
 				
 				<label for=classe >Classe : </label><br>
-				<input type=text id=classe >
+				<input type=text id=classe ><br>
 				
 				<input type=submit >
 				
