@@ -7,6 +7,19 @@
 		//$pdo = null;
 	}
 	catch(PDOException $e) {echo $e->getMessage();}
+	
+	if($_POST){
+		$req = $pdo->prepare("INSERT INTO user (nom, prenom, classe) VALUES (?, ?, ?)");
+			$req->bindParam(1, $name);
+			$req->bindParam(2, $prenom);
+			$req->bindParam(3, $classe);
+			$name = $_POST['nom'];
+			$prenom = $_POST['prenom'];
+			$classe = $_POST['classe'];
+			$req->execute();
+		
+	}
+
 ?>
 <!DOCTYPE html>
 <!--1TM1 Rosar Nicolas-->
@@ -78,7 +91,7 @@
 		<br id=clear >
 		<div>
 			<br>
-			<form method=POST action="insert.php">
+			<form method=POST action="#">
 				<label for=nom >Nom : </label><br>
 				<input type=text id=nom ><br>
 				
