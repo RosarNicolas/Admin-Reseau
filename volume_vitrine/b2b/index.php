@@ -8,6 +8,8 @@
 	}
 	catch(PDOException $e) {echo $e->getMessage();}
 	
+	echo print_r($_POST);
+
 	if(isset($_POST)){
 		$req = $pdo->prepare("INSERT INTO user (nom, prenom, classe) VALUES (?, ?, ?)");
 		echo "prepare fait<br>";
