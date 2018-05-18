@@ -64,7 +64,8 @@
 				
 		div{
 			position: absolute;
-			top: 150px;
+			top: 120px;
+			left: 20px;
 			width:100%;
 		}
 			
