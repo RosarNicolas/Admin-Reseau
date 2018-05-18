@@ -10,12 +10,15 @@
 	
 	if(isset($_POST)){
 		$req = $pdo->prepare("INSERT INTO user (nom, prenom, classe) VALUES (?, ?, ?)");
+		echo "prepare fait<br>";
 			$req->bindParam(1, $name);
 			$req->bindParam(2, $prenom);
 			$req->bindParam(3, $classe);
+		
 			$name = $_POST['nom'];
 			$prenom = $_POST['prenom'];
 			$classe = $_POST['classe'];
+		echo "mise dans variables";
 			$req->execute();
 		
 	}
