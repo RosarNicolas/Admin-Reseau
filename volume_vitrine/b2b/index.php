@@ -63,9 +63,8 @@
 		}
 			
 		#div{
-			text-align: center;
-			position: absolute;
-			top: 120px;
+			margin-top: auto;
+			margin-bottom: auto;
 		}
 			
 		</style>
