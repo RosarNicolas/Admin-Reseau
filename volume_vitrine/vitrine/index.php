@@ -175,8 +175,11 @@ header nav ul li a{
 					<h4>Planifier</h4>
 				
 				<p>	
-					<?php $mysqli = new mysqli("database", "admin", "motdepasse");
-					echo $mysqli->server_info ;?>
+					<?php 
+					
+						require_once "dbConnect();"
+					
+					?>
 				</p>
 				</ul>
 			</div>	
