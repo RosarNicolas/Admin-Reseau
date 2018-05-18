@@ -63,7 +63,9 @@
 		}
 			
 		#form{
-			position: relative;
+			position: fixed;
+			top 50px;
+			width:100%;
 			
 		}
 			
