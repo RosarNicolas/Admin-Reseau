@@ -2,7 +2,7 @@
 	try {
 		$dsn = 'mysql:host=172.17.0.3;dbname=admini;charset=utf8;port=3306';
 		$pdo = new PDO($dsn, 'jordan','motdepasse');
-		echo "Connected to database<br>";
+		//echo "Connected to database<br>";
 			
 		//$pdo = null;
 	}
@@ -69,9 +69,19 @@
 		</header>
 		
 		<div>
-			
-			
-		
+			<form method=POST action="insert.php">
+				<label for=nom >Nom : </label><br>
+				<input type=text id=nom >
+				
+				<label for=prenom >Prénom : </label><br>
+				<input type=text id=prenom >
+				
+				<label for=classe >Classe : </label><br>
+				<input type=text id=classe >
+				
+				<input type=submit >
+				
+			</form>
 		</div>
 		
 		<footer>
@@ -81,18 +91,8 @@
 			<p>
 				<?php
 				
-				$sql = 'select *from user';
+					$sql = 'select *from user';
 				
-					/*$req = $pdo->prepare("INSERT INTO books (nom, prenom) VALUES (?, ?)");
-
-					$req->bindParam(1, $name);
-					$req->bindParam(2, $value);
-
-					$name = $_POST['nom'];
-					$value = $_POST['prenom'];
-
-					$req->execute();*/
-
 					foreach($pdo->query($sql, PDO::FETCH_ASSOC) as $row) {
 						//echo "<pre>".print_r($row,true)."</pre>";
 						echo $row['NOM'] . ' ' . $row['PRENOM'] . ' ' . $row['CLASSE'] . '<br>';
