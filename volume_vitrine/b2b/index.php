@@ -18,7 +18,7 @@
 			$name = $_POST['nom'];
 			$prenom = $_POST['prenom'];
 			$classe = $_POST['classe'];
-		die ("mise dans variables");
+
 			$req->execute();
 		
 	}
