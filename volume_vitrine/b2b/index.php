@@ -64,7 +64,7 @@
 			
 		div{
 			position: absolute;
-			top: 200px;
+			//top: 200px;
 			width:100%;
 			
 		}
@@ -77,6 +77,7 @@
 		</header>
 		<br id=clear >
 		<div >
+			<br>
 			<form method=POST action="insert.php">
 				<label for=nom >Nom : </label><br>
 				<input type=text id=nom ><br>
