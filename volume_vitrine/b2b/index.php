@@ -62,7 +62,11 @@
 			padding: 5px;
 		}
 			
-		div{
+		.rel{
+			position: relative;
+		}
+			
+		.abs{
 			position: absolute;
 			//top: 200px;
 			width:100%;
@@ -76,7 +80,8 @@
 			<h1>Bienvenue dans le b2b de WoodyToys</h1><br>
 		</header>
 		<br id=clear >
-		<div >
+		<div id=rel>
+		<div id=abs>
 			<br>
 			<form method=POST action="insert.php">
 				<label for=nom >Nom : </label><br>
@@ -92,7 +97,7 @@
 				
 			</form>
 		</div>
-		
+		</div>
 		<footer>
 			<p><u>
 			Groupe Numero 3 :
