@@ -95,7 +95,7 @@
 
 					foreach($pdo->query($sql, PDO::FETCH_ASSOC) as $row) {
 						//echo "<pre>".print_r($row,true)."</pre>";
-						echo $row['NOM'] . ' ' . $row['PRENOM'] . ' ' . $row['CLASSE'];
+						echo $row['NOM'] . ' ' . $row['PRENOM'] . ' ' . $row['CLASSE'] . '<br>';
 					}
 
 					$pdo = null;
