@@ -64,7 +64,7 @@
 			</u></p>
 			<p>
 				<?php
-				echo "higigigi";
+				/*echo "higigigi";
 				require_once "catalogue.php";
 				
 				echo "hig1";
@@ -73,9 +73,33 @@
 				echo "higi 1.5";
 				$dbh->connect();
 				echo "higi2";
-				//$rq = $dbh->exec('SELECT * FROM user;');
+				$rq = $dbh->exec('SELECT * FROM user;');
 				echo "higi 3";
-				echo $rq;
+				echo $rq;*/
+				
+				$sql = 'select *from user';
+				try {
+					$dsn = 'mysql:host=172.17.0.3;dbname=admini;charset=utf8;port=3306';
+					$pdo = new PDO($dsn, 'jordan','motdepasse');
+					echo "Connected to database<br>";
+
+					/*$req = $pdo->prepare("INSERT INTO books (nom, prenom) VALUES (?, ?)");
+
+					$req->bindParam(1, $name);
+					$req->bindParam(2, $value);
+
+					$name = $_POST['nom'];
+					$value = $_POST['prenom'];
+
+					$req->execute();*/
+
+					foreach($pdo->query($sql, PDO::FETCH_ASSOC) as $row) {
+						echo "<pre>".print_r($row,true)."</pre>";
+					}
+
+					$pdo = null;
+
+				} catch(PDOException $e) {echo $e->getMessage();}
 				
 				?>
 			</p>
