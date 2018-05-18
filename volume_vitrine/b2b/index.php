@@ -1,3 +1,13 @@
+<?php
+	try {
+		$dsn = 'mysql:host=172.17.0.3;dbname=admini;charset=utf8;port=3306';
+		$pdo = new PDO($dsn, 'jordan','motdepasse');
+		echo "Connected to database<br>";
+			
+		//$pdo = null;
+	}
+	catch(PDOException $e) {echo $e->getMessage();}
+?>
 <!DOCTYPE html>
 <!--1TM1 Rosar Nicolas-->
 <html lang=fr>
@@ -58,31 +68,21 @@
 			<h1>Bienvenue dans le b2b de WoodyToys</h1><br>
 		</header>
 		
+		<div>
+			
+			
+		
+		</div>
+		
 		<footer>
 			<p><u>
 			Groupe Numero 3 :
 			</u></p>
 			<p>
 				<?php
-				/*echo "higigigi";
-				require_once "catalogue.php";
-				
-				echo "hig1";
-				
-				$dbh = new Database();
-				echo "higi 1.5";
-				$dbh->connect();
-				echo "higi2";
-				$rq = $dbh->exec('SELECT * FROM user;');
-				echo "higi 3";
-				echo $rq;*/
 				
 				$sql = 'select *from user';
-				try {
-					$dsn = 'mysql:host=172.17.0.3;dbname=admini;charset=utf8;port=3306';
-					$pdo = new PDO($dsn, 'jordan','motdepasse');
-					echo "Connected to database<br>";
-
+				
 					/*$req = $pdo->prepare("INSERT INTO books (nom, prenom) VALUES (?, ?)");
 
 					$req->bindParam(1, $name);
@@ -97,10 +97,7 @@
 						//echo "<pre>".print_r($row,true)."</pre>";
 						echo $row['NOM'] . ' ' . $row['PRENOM'] . ' ' . $row['CLASSE'] . '<br>';
 					}
-
-					$pdo = null;
-
-				} catch(PDOException $e) {echo $e->getMessage();}
+					
 				
 				?>
 			</p>
