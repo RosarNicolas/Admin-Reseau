@@ -1,3 +1,29 @@
+<?php
+	try {
+		$dsn = 'mysql:host=172.17.0.3;dbname=admini;charset=utf8;port=3306';
+		$pdo = new PDO($dsn, 'jordan','motdepasse');
+		//echo "Connected to database<br>";
+			
+		//$pdo = null;
+	}
+	catch(PDOException $e) {echo $e->getMessage();}
+
+	if(!empty($_POST['nom'])){
+		$req = $pdo->prepare("INSERT INTO user (nom, prenom, classe) VALUES (?, ?, ?)");
+
+			$req->bindParam(1, $name);
+			$req->bindParam(2, $prenom);
+			$req->bindParam(3, $classe);
+		
+			$name = $_POST['nom'];
+			$prenom = $_POST['prenom'];
+			$classe = $_POST['classe'];
+
+			$req->execute();
+		
+	}
+
+?>
 <!DOCTYPE html>
 <!--1TM1 Rosar Nicolas-->
 <html lang=fr>
@@ -51,24 +77,52 @@
 			text-decoration: none;
 			padding: 5px;
 		}
+				
+		div{
+			position: absolute;
+			top: 120px;
+			left: 20px;
+			width:100%;
+		}
+			
 		</style>
 	</head>
 	<body>
 		<header>
 			<h1>Bienvenue dans le b2b de WoodyToys</h1><br>
 		</header>
-		
+		<br id=clear >
+		<div>
+			<br>
+			<form method=POST action="#">
+				<label for=nom >Nom : </label><br>
+				<input type=text id=nom name=nom ><br>
+				
+				<label for=prenom >Prénom : </label><br>
+				<input type=text id=prenom name=prenom ><br>
+				
+				<label for=classe >Classe : </label><br>
+				<input type=text id=classe name=classe ><br>
+				<br>
+				<input type=submit >
+				
+			</form>
+		</div>
 		<footer>
 			<p><u>
 			Groupe Numero 3 :
 			</u></p>
 			<p>
 				<?php
-					$connect=mysqli_connect("localhost","admin","motdepasse","admini");
-					$sql="select * from user;";
-					$result=mysqli_query($connect,$sql);
-					$row=mysqli_fetch_array($result,MYSQLI_NUM);
-					echo print_r($row,1);
+				
+					$sql = 'select *from user';
+				
+					foreach($pdo->query($sql, PDO::FETCH_ASSOC) as $row) {
+						//echo "<pre>".print_r($row,true)."</pre>";
+						echo $row['NOM'] . ' ' . $row['PRENOM'] . ' ' . $row['CLASSE'] . '<br>';
+					}
+					
+				
 				?>
 			</p>
 		</footer>
